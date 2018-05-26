@@ -6,12 +6,10 @@ import HelpPage from '../pages/HelpPage';
 import HomePage from '../pages/HomePage';
 import DownloadPage from '../pages/DownloadPage';
 import NotFoundPage from '../pages/NotFoundPage';
-import Header from '../pages/Header';
 
 const AppRouter = () => (
     <BrowserRouter>
         <div>
-            <Header />
             <Switch>
                 <Route path="/" component={WelcomePage} exact={true} />
                 <Route path="/rooms" component={RoomsPage} />
